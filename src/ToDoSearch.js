@@ -1,6 +1,8 @@
+import "./ToDoSearch.css";
+
 function ToDoInput(){
     return(
-        <input placeholder="Limpiar el cuarto"/>
+        <input className="searchInput" placeholder="Limpiar el cuarto"/>
     )    
 }
 

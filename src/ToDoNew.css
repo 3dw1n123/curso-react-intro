@@ -1,0 +1,31 @@
+.creationContainer{
+    border: solid gray;
+    border-radius: 24px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.creationContainer input{
+    padding: 0;
+    border:none;
+    background-color: bisque;
+    height: 48px;
+    border-radius: 60px;
+    padding-left: 20px;
+    width: 80%;
+}
+
+.creationContainer button{
+    border: none;
+    background-color: antiquewhite;
+    border-radius: 60px;
+    width: 20%;
+}
+
+.imageContainer{
+    
+}
+
+.creationContainer   img{
+    width: 30px;
+}

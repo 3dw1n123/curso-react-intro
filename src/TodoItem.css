@@ -1,0 +1,23 @@
+.itemList{
+    display: flex;
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.check{
+    padding-left: 30px;
+}
+
+.delete{
+    padding-right: 30px;
+}
+
+.itemList p{
+    padding: 0px 10px;
+}
+.itemList span img{
+    height: 32px;
+}
