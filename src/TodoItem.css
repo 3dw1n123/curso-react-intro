@@ -11,8 +11,16 @@
     padding-left: 30px;
 }
 
+.check--active{
+    color: chartreuse;
+}
+
 .delete{
     padding-right: 30px;
+}
+
+.delete:hover{
+    color: red;
 }
 
 .itemList p{
@@ -20,4 +28,8 @@
 }
 .itemList span img{
     height: 32px;
+}
+
+.text--complete{
+    text-decoration: line-through;
 }

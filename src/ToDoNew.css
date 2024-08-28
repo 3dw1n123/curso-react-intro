@@ -3,6 +3,7 @@
     border-radius: 24px;
     background-color: antiquewhite;
     display: flex;
+    margin: 10px 30px;
 }
 
 .creationContainer input{
@@ -22,10 +23,27 @@
     width: 20%;
 }
 
+.try{
+    height: 40%;
+}
+
 .imageContainer{
-    
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .creationContainer   img{
     width: 30px;
+    cursor:pointer;
+}
+
+.creationContainer img:hover{
+    transform: rotate(224deg);
+}
+
+
+.creationMainDiv{
+    width: 100%;
 }
