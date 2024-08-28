@@ -31,6 +31,9 @@ function App() {
 
   const totalTodos = todos.length;
 
+  const searchedTodos = todos.filter(todos => 
+    todos.text.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()));
+
 
   return (
     <>
@@ -41,7 +44,7 @@ function App() {
             setSearchValue={setSearchValue}
             />
             <ToDoList>
-            {todos.map(todo=>(
+            {searchedTodos.map(todo=>(
               <ToDoItem key={todo.text} text={todo.text} completed={todo.completed}/>
             ))}
             </ToDoList>

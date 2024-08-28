@@ -6,9 +6,6 @@ function ToDoInput({
     setSearchValue,
 }){
 
-    
-
-    console.log('Los usuarios buscan: ' + searchValue);
     return(
         <input className="searchInput" placeholder="Limpiar el cuarto"
         value = {searchValue}
