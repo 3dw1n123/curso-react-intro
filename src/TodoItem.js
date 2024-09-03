@@ -6,11 +6,13 @@ import del from "./assets/delete.png";
 function ToDoItem(props){
     return (
       <li className="itemList">
-        <span className={`check  ${props.completed && "check--active"}`}>
+        <span className={`check  ${props.completed && "check--active"}`}
+        onClick={props.onComplete}>
           <img src={logo}/>
         </span>
         <p className={`text ${props.completed && "text--complete"}` }>{props.text}</p>
-        <span className={`delete`}>
+        <span className={`delete`}
+        onClick={props.onDelete}>
           <img src={del}/>
         </span>
       </li>

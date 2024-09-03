@@ -34,6 +34,33 @@ function App() {
   const searchedTodos = todos.filter(todos => 
     todos.text.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase()));
 
+  
+  const checkTodo = (text)=>{
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo)=>todo.text == text
+    );
+
+    console.log(todoIndex);
+    if(newTodos[todoIndex].completed == false){
+      console.log("Entró");
+      newTodos[todoIndex].completed = true;
+    }else{
+      console.log("No entró");
+      newTodos[todoIndex].completed = false;
+    }
+    setTodos(newTodos);
+  }
+
+  const deleteTodo =(text)=>{
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo)=>todo.text == text
+    );
+    console.log(todoIndex);
+    newTodos.splice(todoIndex,1);
+    setTodos(newTodos);
+  } 
 
   return (
     <>
@@ -45,7 +72,14 @@ function App() {
             />
             <ToDoList>
             {searchedTodos.map(todo=>(
-              <ToDoItem key={todo.text} text={todo.text} completed={todo.completed}/>
+              <ToDoItem 
+              key={todo.text} 
+              text={todo.text} 
+              completed={todo.completed}
+              onComplete={()=> checkTodo(todo.text)}
+              onDelete={()=>deleteTodo(todo.text)}
+
+              />
             ))}
             </ToDoList>
         </div>

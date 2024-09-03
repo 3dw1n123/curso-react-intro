@@ -17,6 +17,7 @@
 
 .delete{
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .delete:hover{
