@@ -1,0 +1,17 @@
+.Icon-check{
+    padding-left: 30px;
+}
+
+.Icon-delete{
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.Icon-delete .iconSvg:hover{
+    fill: red;
+}
+
+.iconSvg{
+    width: 28px;
+    height: 28px;
+}

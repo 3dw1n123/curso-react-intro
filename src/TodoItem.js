@@ -1,20 +1,16 @@
 import "./TodoItem.css"
-import logo from "./assets/square.png";
-import logo2 from "./assets/check-box.png";
-import del from "./assets/delete.png";
+import {CompleteIcon} from './CompleteIcon';
+import {DeleteIcon} from './DeleteIcon';
 
 function ToDoItem(props){
     return (
       <li className="itemList">
-        <span className={`check  ${props.completed && "check--active"}`}
-        onClick={props.onComplete}>
-          <img src={logo}/>
-        </span>
+        <CompleteIcon completed={props.completed} onComplete={props.onComplete}  />
+        
         <p className={`text ${props.completed && "text--complete"}` }>{props.text}</p>
-        <span className={`delete`}
-        onClick={props.onDelete}>
-          <img src={del}/>
-        </span>
+        <DeleteIcon 
+        onDelete = {props.onDelete}/>
+        
       </li>
     );
   }

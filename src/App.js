@@ -43,10 +43,8 @@ function App() {
 
     console.log(todoIndex);
     if(newTodos[todoIndex].completed == false){
-      console.log("Entró");
       newTodos[todoIndex].completed = true;
     }else{
-      console.log("No entró");
       newTodos[todoIndex].completed = false;
     }
     setTodos(newTodos);

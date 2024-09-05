@@ -7,28 +7,8 @@
     border-radius: 24px;
 }
 
-.check{
-    padding-left: 30px;
-}
-
-.check--active{
-    color: chartreuse;
-}
-
-.delete{
-    padding-right: 30px;
-    cursor: pointer;
-}
-
-.delete:hover{
-    color: red;
-}
-
 .itemList p{
     padding: 0px 10px;
-}
-.itemList span img{
-    height: 32px;
 }
 
 .text--complete{
